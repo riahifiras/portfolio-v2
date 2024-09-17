@@ -1,6 +1,7 @@
 import { useState, useContext } from 'react';
 import { DarkModeContext } from '../../context/DarkModeContext';
 import './Interest.css'
+import Image from 'next/image';
 
 const Interest = ({ image, title }) => {
   const [isHovered, setIsHovered] = useState(false);

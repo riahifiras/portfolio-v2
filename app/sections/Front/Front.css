@@ -1,0 +1,60 @@
+
+
+.custom-height-responsive {
+    height: 600px;
+  }
+
+  @media screen and (max-height: 800px){
+    /* Styles for screens with a height up to 600px */
+    .custom-height-responsive {
+      height: 420px;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-right {
+    animation: slideInRight 2500ms ease forwards;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .size {
+        height: 320px;
+        width: auto;
+    }
+
+    .name {
+        font-size: 60px;
+    }
+
+    .up {
+        transform: translateY(-432px);
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .size {
+        height: 320px;
+        width: auto;
+    }
+}

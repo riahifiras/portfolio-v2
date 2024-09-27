@@ -48,6 +48,7 @@ function PauseOnHover({ set }) {
                             src={element.image}
                             alt="photo"
                             className={`${imageDimensions[index]?.height >= imageDimensions[index]?.width ? "object-contain" : "object-cover"} h-full w-full`}
+                            loading="lazy"
                         />
                     </div>
                 ))}

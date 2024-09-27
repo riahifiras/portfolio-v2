@@ -26,6 +26,7 @@ const Project = ({ showPopup, openPopup, image, url, name }) => {
           alt="project"
           className="rounded-xl shadow-lg transition duration-200 cursor-pointer aspect-video object-cover w-full h-auto"
           style={isHovered ? { filter: "contrast(0.7) brightness(0.4)" } : {}}
+          loading="lazy"
         />
         {isHovered && (
           <div className="absolute inset-0 flex flex-col gap-6 items-center justify-center bg-black bg-opacity-0 transition-opacity duration-500">

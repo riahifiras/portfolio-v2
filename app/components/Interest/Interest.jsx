@@ -30,6 +30,7 @@ const Interest = ({ image, title }) => {
           alt="image"
           className="rounded-2xl"
           style={isHovered ? { filter: 'contrast(0.7) brightness(0.4)' } : {}}
+          loading="lazy"
         />
         {isHovered && (
           <div className="absolute inset-0 flex flex-col gap-6 items-center justify-center bg-black bg-opacity-0 transition-opacity duration-500">

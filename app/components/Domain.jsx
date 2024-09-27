@@ -40,7 +40,7 @@ const Domain = ({ icon, title, tools, description, isActive, onToggle }) => {
         className={`flex justify-between px-10 w-full h-[100px] items-center transition-all duration-300 ease-in-out`}
         onClick={onToggle}
       >
-        <Image src={icon} alt={title} className="h-10 w-auto" />
+        <Image src={icon} alt={title} className="h-10 w-auto" loading="lazy"/>
         <h1 className="w-[70%] font-semibold text-xl">{title}</h1>
         <IoIosArrowDown
           className={`text-2xl transition-transform ${
@@ -59,7 +59,7 @@ const Domain = ({ icon, title, tools, description, isActive, onToggle }) => {
         <h2 className="pb-2 text-md">Tools I use</h2>
         <div className="pb-4 flex gap-2 w-full flex-wrap">
           {tools.map((pic, index) => (
-            <Image key={index} className="w-6 h-auto" src={pic} alt="" />
+            <Image key={index} className="w-6 h-auto" src={pic} alt="" loading="lazy"/>
           ))}
         </div>
       </div>

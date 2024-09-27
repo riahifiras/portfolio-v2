@@ -50,10 +50,10 @@ const Front = () => {
               <h1 className='flex flex-col lg:gap-4 gap-8 lg:text-5xl md:text-3xl text-2xl font-semibold font-euro unselectable'><span className={darkMode ? "text-black" : "text-white"}>Hi, I&#39;m</span><span className='whitespace-nowrap 2xl:text-[140px] xl:text-[120px] lg:[110px] md:text-[100px] text-[60px] lg:mb-0 mb-4'><span className={darkMode ? "text-black" : "text-white"}>Firas </span><span className='text-blue-700'>Riahi</span></span></h1>
               <br />
               <h3 className='unselectable lg:text-2xl text-xl font-[500] w-full'>
-              <span className={darkMode ? "text-black" : "text-white"}>I am a</span>
+              <span className={darkMode ? "text-black" : "text-white"}>I do</span>
                 <span className='text-blue-700'>
                   <Typewriter
-                    words={[' Web developer', ' Game developer', ' Graphic designer', ' CAD designer']}
+                    words={[' Web & mobile development', ' Game development', ' Graphic design', ' Computer aided design']}
                     loop={true}
                   />
                 </span>
@@ -61,7 +61,7 @@ const Front = () => {
               </h3>
               <button onClick={handleDownload} className='unselectable z-30 flex justify-center items-center h-10 w-36 mt-6 rounded-full bg-blue-700 text-white text-md font-semibold hover:bg-blue-600 transition duration-200'>Download CV</button>
             </div>
-            <Image src={me} alt="" className='unselectable  -translate-y-20 lg:-translate-y-0 absolute lg:right-40 -bottom-16 lg:h-[90%] h-[60%] w-auto' />
+            <Image src={me} alt="" className='unselectable  -translate-y-20 lg:-translate-y-0 absolute lg:right-40 -bottom-16 lg:h-[90%] h-[60%] w-auto' loading="lazy"/>
           </div>
         </div>
       ) : (

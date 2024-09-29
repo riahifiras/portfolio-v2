@@ -34,7 +34,7 @@ const ProjectPopup = ({ info, onClose }) => {
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowFullScreen
       title="Embedded youtube"
-    /> : <Image className="absolute lg:h-[540px] h-full object-contain lg:rounded-l-lg rounded-t-lg lg:w-[600px] w-full" src={info.image} alt="" loading="lazy"/>
+    /> : <div className="relative"><Image className="absolute lg:h-[540px] h-full object-cover blur-lg scale-[1.2] lg:rounded-l-lg rounded-t-lg lg:w-[600px] w-full" src={info.image} alt="" loading="lazy"/><Image className="absolute lg:h-[540px] h-full object-contain lg:rounded-l-lg rounded-t-lg lg:w-[600px] w-full" src={info.image} alt="" loading="lazy"/></div>
                     }
 
                     <button

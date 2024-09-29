@@ -43,13 +43,20 @@ function PauseOnHover({ set }) {
         <div className="slider-container w-[90%] lg:w-[50%]">
             <Slider {...settings}>
                 {set.map((element, index) => (
-                    <div key={index} className="shadow-lg aspect-video w-[80%] lg:h-[380px] h-[256px] bg-black flex justify-center items-center">
+                    <div key={index} className="relative shadow-lg aspect-video w-[80%] h-[380px] -m-2 bg-black flex justify-center items-center">
                         <Image
                             src={element.image}
                             alt="photo"
-                            className={`${imageDimensions[index]?.height >= imageDimensions[index]?.width ? "object-contain" : "object-cover"} h-full w-full`}
+                            className={`absolute blur-lg scale-[1.1] object-cover h-full w-full`}
                             loading="lazy"
                         />
+                        <Image
+                            src={element.image}
+                            alt="photo"
+                            className={`absolute translate-y-1 object-contain h-full w-full`}
+                            loading="lazy"
+                        />
+                        
                     </div>
                 ))}
             </Slider>

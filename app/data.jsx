@@ -26,64 +26,65 @@ import { station } from './Images'
 
 const cpc = [
     {
-        image: cpc2,
-        description: "text"
+        image: cpc3,
+        description: "Our first experience in a competitive programming competition, the ENSI Programming Challenge 2.0, where we placed 5th out of 32 teams."
     },
     {
-        image: cpc3,
-        description: "text"
+        image: cpc2,
+        description: "My team and I at the ENSI Programming Challenge 3.0, where we ranked in the top 10 out of 60 teams."
     },
     {
         image: cpc6,
-        description: "text"
+        description: "Participating in a small competitive programming competition as part of a hackathon."
     },
-]
+];
 
 const robotics = [
     {
+        image: robotics4,
+        description: "My first-ever line-following robot."
+    },
+    {
         image: robotics2,
-        description: "text"
+        description: "The second iteration of my line-following robot."
     },
     {
         image: robotics3,
-        description: "text"
-    },
-    {
-        image: robotics4,
-        description: "text"
+        description: "A robot smiling :)"
     },
     {
         image: robotics5,
-        description: "text"
+        description: "The third edition of my line-following robot."
     },
     {
         image: robotics6,
-        description: "text"
+        description: "A CAD design for a drone."
     },
-]
+];
 
 const ctf = [
     {
         image: ctf1,
-        description: "text"
+        description: "My team and I at the ENIT Get The Flag CTF—my first CTF competition."
     },
     {
         image: ctf4,
-        description: "text"
+        description: "Our participation in the SupCom Hackfest Finals in 2023."
     },
     {
         image: ctf5,
-        description: "text"
+        description: "Competing in the SupCom Hackfest Finals in 2024 with my team."
     },
     {
         image: ctf6,
-        description: "text"
+        description: "Presenting my RAT (Remote Access Tool) project."
     },
     {
         image: ctf7,
-        description: "text"
+        description: "Working on an embedded systems task during a CTF. :P"
     },
-]
+];
+
 
 const projects = [
     {

@@ -1,11 +1,13 @@
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import Slider from "react-slick";
+import { DarkModeContext } from "../context/DarkModeContext";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function PauseOnHover({ set }) {
     const [imageDimensions, setImageDimensions] = useState([]);
+    const { darkMode, toggleDarkMode } = useContext(DarkModeContext);
 
     var settings = {
         dots: true,
@@ -13,7 +15,7 @@ function PauseOnHover({ set }) {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 4000,
         pauseOnHover: true,
         arrows: false
     };
@@ -40,24 +42,28 @@ function PauseOnHover({ set }) {
     }, [set]);
 
     return (
-        <div className="slider-container w-[90%] lg:w-[50%]">
+        <div className="relative slider-container w-[90%] lg:w-[50%]">
             <Slider {...settings}>
                 {set.map((element, index) => (
-                    <div key={index} className="relative shadow-lg aspect-video w-[80%] h-[380px] -m-2 bg-black flex justify-center items-center">
-                        <Image
-                            src={element.image}
-                            alt="photo"
-                            className={`absolute blur-lg scale-[1.1] object-cover h-full w-full`}
-                            loading="lazy"
-                        />
-                        <Image
-                            src={element.image}
-                            alt="photo"
-                            className={`absolute translate-y-1 object-contain h-full w-full`}
-                            loading="lazy"
-                        />
-                        
+                    <div key={index} className="relative flex h-[400px] w-[80%] justify-center items-center ">
+                        <p className={`absolute h-20 text-center px-10 z-50 left-0 right-0 w-full flex justify-center items-center ${darkMode ? 'bg-[#cbd4d4]' : 'bg-[#16181d]'}`}>{element.description}</p>
+                        <div className="relative shadow-lg aspect-video -my-2">
+                            <Image
+                                src={element.image}
+                                alt="photo"
+                                className={`absolute blur-lg scale-[1.0] object-cover h-full w-full`}
+                                loading="lazy"
+                            />
+                            <Image
+                                src={element.image}
+                                alt="photo"
+                                className={`absolute translate-y-1 object-contain h-full w-full`}
+                                loading="lazy"
+                            />
+
+                        </div>
                     </div>
+
                 ))}
             </Slider>
         </div>

@@ -141,6 +141,12 @@ const projects = [
         url: "https://github.com/riahifiras/Packet-sniffer",
         description: "A Python application empowering users to intercept and analyze network packets traversing through their network infrastructure."
     },
+    {
+        image: sniffer,
+        name: "Packet Sniffer",
+        url: "https://github.com/riahifiras/Packet-sniffer",
+        description: "A Python application empowering users to intercept and analyze network packets traversing through their network infrastructure."
+    },
 ];
 
 

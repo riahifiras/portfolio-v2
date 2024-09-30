@@ -46,7 +46,7 @@ function PauseOnHover({ set }) {
             <Slider {...settings}>
                 {set.map((element, index) => (
                     <div key={index} className="relative flex h-[400px] w-[80%] justify-center items-center ">
-                        <p className={`absolute h-20 text-center px-10 z-50 left-0 right-0 w-full flex justify-center items-center ${darkMode ? 'bg-[#cbd4d4]' : 'bg-[#16181d]'}`}>{element.description}</p>
+                        <p className={`absolute ${darkMode ? "text-black" : "text-white"} h-20 text-center px-10 z-50 left-0 right-0 w-full flex justify-center items-center ${darkMode ? 'bg-[#cbd4d4]' : 'bg-[#16181d]'}`}>{element.description}</p>
                         <div className="relative shadow-lg aspect-video -my-2">
                             <Image
                                 src={element.image}

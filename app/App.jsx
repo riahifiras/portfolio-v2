@@ -8,6 +8,8 @@ import About from './sections/About/About';
 import Interests from './sections/Interests/Interests';
 import Projects from './sections/Projects/Projects';
 import Footer from './sections/Footer/Footer';
+import Blogs from './components/Blogs';
+import Testimonials from './components/Testimonials';
 
 function App() {
   const { darkMode, toggleDarkMode } = useContext(DarkModeContext);
@@ -55,6 +57,7 @@ function App() {
       <div className={`${darkMode ? 'bg-[#cbd4d4]' : 'bg-[#16181d]'}`}>
         <Interests />
         <Projects />
+        <Blogs />
         <Footer id="footer" />
       </div>
     </>

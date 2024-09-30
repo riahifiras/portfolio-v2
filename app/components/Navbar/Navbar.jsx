@@ -24,6 +24,7 @@ const Navbar = () => {
                 <a className="nav text-lg" href="#About" onClick={(e) => handleClick(e, "About")}>About</a>
                 <a className="nav text-lg" href="#Interests" onClick={(e) => handleClick(e, "Interests")}>Interests</a>
                 <a className="nav text-lg" href="#Projects" onClick={(e) => handleClick(e, "Projects")}>Projects</a>
+                <a className="nav text-lg" href="#Blogs" onClick={(e) => handleClick(e, "Blogs")}>Blogs</a>
                 <a className="nav text-lg" href="#Contact" onClick={(e) => handleClick(e, "Contact")}>Contact</a>
                 <button className="flex justify-center items-center text-xl shadow-2xl rounded-full bg-blue-700 h-12 w-12 text-white transition duration-300 ease-in-out relative" onClick={toggleDarkMode}>{darkMode ? <MdOutlineDarkMode/> : <MdOutlineLightMode/>}</button>
             </div>

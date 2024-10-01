@@ -42,16 +42,16 @@ function PauseOnHover({ set }) {
     }, [set]);
 
     return (
-        <div className="relative slider-container w-[90%] lg:w-[50%]">
+        <div className="h-96 relative slider-container w-[90%] lg:w-[50%]">
             <Slider {...settings}>
                 {set.map((element, index) => (
-                    <div key={index} className="relative flex h-[400px] w-[80%] justify-center items-center ">
-                        <p className={`absolute ${darkMode ? "text-black" : "text-white"} h-20 text-center px-10 z-50 left-0 right-0 w-full flex justify-center items-center ${darkMode ? 'bg-[#cbd4d4]' : 'bg-[#16181d]'}`}>{element.description}</p>
+                    <div key={index} className="relative h-full flex w-[80%] justify-between gap-20 items-center ">
+                        {/* <p className={`absolute ${darkMode ? "text-black" : "text-white"} h-fit text-center pb-10 px-10 z-50 left-0 right-0 w-full flex justify-center items-center ${darkMode ? 'bg-[#cbd4d4]' : 'bg-[#16181d]'}`}>{element.description}</p> */}
                         <div className="relative shadow-lg aspect-video -my-2">
                             <Image
                                 src={element.image}
                                 alt="photo"
-                                className={`absolute blur-lg scale-[1.0] object-cover h-full w-full`}
+                                className={`absolute blur-lg object-cover h-full w-full`}
                                 loading="lazy"
                             />
                             <Image

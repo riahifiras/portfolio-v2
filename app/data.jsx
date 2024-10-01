@@ -149,5 +149,57 @@ const projects = [
     },
 ];
 
+const blogs = [
+    {
+      id: 1,
+      title: "The Future of AI in Software Development",
+      excerpt: "Exploring how artificial intelligence is reshaping the landscape of coding and software engineering.",
+      date: "2023-09-30",
+      readTime: "5 min read",
+      category: "Technology"
+    },
+    {
+      id: 2,
+      title: "Building Scalable Web Applications with Next.js",
+      excerpt: "A deep dive into the benefits of using Next.js for creating performant and scalable web applications.",
+      date: "2023-09-25",
+      readTime: "7 min read",
+      category: "Web Development"
+    },
+    {
+      id: 3,
+      title: "The Importance of Cybersecurity in Modern Software",
+      excerpt: "Discussing the critical role of cybersecurity in today's software development practices.",
+      date: "2023-09-20",
+      readTime: "6 min read",
+      category: "Security"
+    },
+    {
+      id: 4,
+      title: "The Future of AI in Software Development",
+      excerpt: "Exploring how artificial intelligence is reshaping the landscape of coding and software engineering.",
+      date: "2023-09-30",
+      readTime: "5 min read",
+      category: "Technology"
+    },
+    {
+      id: 5,
+      title: "Building Scalable Web Applications with Next.js",
+      excerpt: "A deep dive into the benefits of using Next.js for creating performant and scalable web applications.",
+      date: "2023-09-25",
+      readTime: "7 min read",
+      category: "Web Development"
+    },
+    {
+      id: 6,
+      title: "The Importance of Cybersecurity in Modern Software",
+      excerpt: "Discussing the critical role of cybersecurity in today's software development practices.",
+      date: "2023-09-20",
+      readTime: "6 min read",
+      category: "Security"
+    }
+  ]
+  
 
-export { ctf, cpc, robotics, projects };
+
+export { ctf, cpc, robotics, projects, blogs };

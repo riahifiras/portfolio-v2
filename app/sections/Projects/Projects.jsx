@@ -1,12 +1,12 @@
 'use client'
 
-import { useState, useEffect, useContext } from 'react'
+import { useState, useEffect, useContext, useRef } from 'react'
 import { DarkModeContext } from '../../context/DarkModeContext'
 import ProjectsSlider from '../../components/ProjectsSlider'
 import Project from '../../components/Project'
 import ProjectPopup from '../../components/ProjectPopup'
 import { projects } from '../../data'
-import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { ChevronLeft, ChevronRight, ChevronDown } from 'lucide-react'
 
 const PROJECTS_PER_PAGE = 9
 
@@ -18,7 +18,9 @@ export default function Projects() {
   const [selectedProject, setSelectedProject] = useState({})
   const [filter, setFilter] = useState('All')
   const [currentPage, setCurrentPage] = useState(1)
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false)
   const { darkMode } = useContext(DarkModeContext)
+  const dropdownRef = useRef(null)
 
   const filteredProjects = filter === 'All' 
     ? projects 
@@ -47,7 +49,7 @@ export default function Projects() {
 
   useEffect(() => {
     const handleResize = () => {
-      const isSmallScreen = window.innerWidth <= 1024
+      const isSmallScreen = window.innerWidth <= 768
       setIsSmall(isSmallScreen)
     }
 
@@ -62,6 +64,28 @@ export default function Projects() {
     setCurrentPage(1)
   }, [filter])
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsDropdownOpen(false)
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [])
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen)
+  }
+
+  const handleCategorySelect = (category) => {
+    setFilter(category)
+    setIsDropdownOpen(false)
+  }
+
   return (
     <div id='Projects' className={`${darkMode ? "bg-[#cbd4d4]" : "bg-[#16181d]"} flex flex-col lg:text-center text-left items-center lg:min-h-screen -mt-28 lg:gap-10 gap-6 py-10`}>
       {showPopup && <ProjectPopup info={selectedProject} onClose={closePopup} />}
@@ -70,21 +94,54 @@ export default function Projects() {
       <h1 className={`lg:text-6xl text-5xl font-semibold ${darkMode ? "text-black" : "text-white"}`}>My recent work</h1>
       <h3 className={`lg:text-xl text-center ${darkMode ? "text-black" : "text-white"}`}>Here are a few projects I&#39;ve worked on. Want to see more? <a className='text-blue-700' href="#Contact">Contact me</a>.</h3>
 
-      <div className="flex flex-wrap justify-center space-x-4 mb-6">
-        {categories.map((category) => (
+      {isSmall ? (
+        <div className="relative w-48" ref={dropdownRef}>
           <button
-            key={category}
-            onClick={() => setFilter(category)}
-            className={`text-xl px-4 rounded-md ${
-              filter === category
-                ? 'text-blue-700'
-                : `${darkMode ? 'text-black ' : 'text-white'}`
-            } transition-colors duration-200`}
+            onClick={toggleDropdown}
+            className={`flex items-center justify-between w-full px-4 py-2 text-left ${
+              darkMode ? "bg-white text-black" : "bg-gray-800 text-white"
+            } rounded-md focus:outline-none transition-colors duration-200`}
           >
-            {category}
+            <span>{filter}</span>
+            <ChevronDown className={`w-5 h-5 transition-transform duration-200 ${isDropdownOpen ? 'transform rotate-180' : ''}`} />
           </button>
-        ))}
-      </div>
+          <div 
+            className={`absolute z-10 w-full mt-1 ${
+              darkMode ? "bg-white" : "bg-gray-800"
+            } rounded-md shadow-lg overflow-hidden transition-all duration-200 ease-in-out ${
+              isDropdownOpen ? 'max-h-60 opacity-100' : 'max-h-0 opacity-0'
+            }`}
+          >
+            {categories.map((category) => (
+              <button
+                key={category}
+                onClick={() => handleCategorySelect(category)}
+                className={`block w-full text-left px-4 py-2 ${
+                  darkMode ? "text-black hover:bg-gray-100" : "text-white hover:bg-gray-700"
+                } ${filter === category ? 'font-bold' : ''} transition-colors duration-200`}
+              >
+                {category}
+              </button>
+            ))}
+          </div>
+        </div>
+      ) : (
+        <div className="flex flex-wrap justify-center space-x-4 mb-6">
+          {categories.map((category) => (
+            <button
+              key={category}
+              onClick={() => setFilter(category)}
+              className={`text-xl px-4 py-2 rounded-md ${
+                filter === category
+                  ? 'text-blue-700 font-bold'
+                  : `${darkMode ? 'text-black hover:bg-white/10' : 'text-white hover:bg-black/10'}`
+              } transition-colors duration-200`}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
+      )}
 
       {!isSmall ? (
         <>
@@ -106,7 +163,7 @@ export default function Projects() {
               <button
                 onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
                 disabled={currentPage === 1}
-                className={`p-2 rounded-full ${currentPage === 1 ? 'opacity-50 cursor-not-allowed' : 'hover:bg-gray-200'}`}
+                className={`p-2 rounded-full ${currentPage === 1 ? 'opacity-50 cursor-not-allowed' : `${darkMode ? 'hover:bg-white/10' : 'hover:bg-black/10'}`} transition-colors duration-200`}
                 aria-label="Previous page"
               >
                 <ChevronLeft className={darkMode ? "text-black" : "text-white"} />
@@ -117,7 +174,7 @@ export default function Projects() {
               <button
                 onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
                 disabled={currentPage === totalPages}
-                className={`p-2 rounded-full ${currentPage === totalPages ? 'opacity-50 cursor-not-allowed' : 'hover:bg-gray-200'}`}
+                className={`p-2 rounded-full ${currentPage === totalPages ? 'opacity-50 cursor-not-allowed' : `${darkMode ? 'hover:bg-white/10' : 'hover:bg-black/10'}`} transition-colors duration-200`}
                 aria-label="Next page"
               >
                 <ChevronRight className={darkMode ? "text-black" : "text-white"} />

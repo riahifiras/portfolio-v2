@@ -18,7 +18,7 @@ const Interests = () => {
 
 
       <div className='flex flex-col w-full lg:px-40 px-10'>
-        <div className='flex flex-col items-start gap-8 py-2'>
+        <div className='flex flex-col items-start gap-8 py-10'>
           <h1 className={`text-6xl font-semibold ${darkMode ? "text-black" : "text-white"}`}>Interests</h1>
           <div className='flex flex-col items-start gap-2'>
             <p className={`text-xl text-left ${darkMode ? "text-black" : "text-white"}`}>

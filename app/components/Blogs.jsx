@@ -28,7 +28,7 @@ export default function Blogs() {
       <div className="container mx-auto px-4">
       <h1 className={`lg:text-6xl text-5xl font-semibold mb-10 ${darkMode ? "text-black" : "text-white"}`}>Latest Blog Posts</h1>
         {!isSmall ? <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {blogs.map((post) => (
+          {blogs.map((post, index) => (
             <Blog key={index} post={post}/>
           ))}
         </div>: <BlogSlider/>}

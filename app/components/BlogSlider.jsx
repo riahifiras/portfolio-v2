@@ -22,7 +22,7 @@ const BlogSlider = () => {
             <Slider {...settings}>
                 {blogs.map((blog, index) => {
                     return (
-                        <Blog post={blog}/>
+                        <Blog key={index} post={blog}/>
                     )
                 })}
             </Slider>

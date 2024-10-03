@@ -98,17 +98,14 @@ export default function Projects() {
         <div className="relative w-48" ref={dropdownRef}>
           <button
             onClick={toggleDropdown}
-            className={`flex items-center justify-between w-full px-4 py-2 text-left ${
-              darkMode ? "bg-white text-black" : "bg-gray-800 text-white"
-            } rounded-md focus:outline-none transition-colors duration-200`}
+            className={`flex items-center justify-between w-full px-4 py-2 text-left bg-gray-800 text-white
+            rounded-md focus:outline-none transition-colors duration-200`}
           >
             <span>{filter}</span>
             <ChevronDown className={`w-5 h-5 transition-transform duration-200 ${isDropdownOpen ? 'transform rotate-180' : ''}`} />
           </button>
           <div 
-            className={`absolute z-10 w-full mt-1 ${
-              darkMode ? "bg-white" : "bg-gray-800"
-            } rounded-md shadow-lg overflow-hidden transition-all duration-200 ease-in-out ${
+            className={`absolute z-10 w-full mt-1 bg-gray-800 rounded-md shadow-lg overflow-hidden transition-all duration-200 ease-in-out ${
               isDropdownOpen ? 'max-h-60 opacity-100' : 'max-h-0 opacity-0'
             }`}
           >
@@ -116,8 +113,7 @@ export default function Projects() {
               <button
                 key={category}
                 onClick={() => handleCategorySelect(category)}
-                className={`block w-full text-left px-4 py-2 ${
-                  darkMode ? "text-black hover:bg-gray-100" : "text-white hover:bg-gray-700"
+                className={`block w-full text-left px-4 py-2 text-white bg-gray-800 hover:bg-gray-700
                 } ${filter === category ? 'font-bold' : ''} transition-colors duration-200`}
               >
                 {category}
@@ -134,7 +130,7 @@ export default function Projects() {
               className={`text-xl px-4 py-2 rounded-md ${
                 filter === category
                   ? 'text-blue-700 font-bold'
-                  : `${darkMode ? 'text-black hover:bg-white/10' : 'text-white hover:bg-black/10'}`
+                  : `${darkMode ? 'text-black ' : 'text-white '}`
               } transition-colors duration-200`}
             >
               {category}

@@ -42,7 +42,7 @@ function PauseOnHover({ set }) {
     }, [set]);
 
     return (
-        <div className="h-96 relative slider-container w-[90%] lg:w-[50%]">
+        <div className="relative slider-container w-[90%] lg:w-[50%]">
             <Slider {...settings}>
                 {set.map((element, index) => (
                     <div key={index} className="relative h-full flex w-[80%] justify-between gap-20 items-center ">
@@ -62,6 +62,8 @@ function PauseOnHover({ set }) {
                             />
 
                         </div>
+                        <p style={{zIndex: '999'}} className={`relative pt-4 ${darkMode ? "text-black" : "text-white"} h-fit text-center px-10 left-0 right-0 w-full flex justify-center items-center ${darkMode ? 'bg-[#cbd4d4]' : 'bg-[#16181d]'}`}>{element.description}</p>
+
                     </div>
 
                 ))}

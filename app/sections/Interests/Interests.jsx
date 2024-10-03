@@ -31,7 +31,7 @@ const Interests = () => {
         </div>
       </div>
       <div className="w-full h-[60%] lg:gap-24 gap-10 lg:px-40 flex lg:flex-row flex-col-reverse justify-around items-center">
-        <div className='lg:w-[40%] flex lg:flex-col gap-2 lg:justify-center justify-between items-center'>
+        <div className='lg:w-[40%] lg:-translate-y-10 flex lg:flex-col gap-2 lg:justify-center justify-between items-center'>
           <div className={`xl:w-[72%] lg:w-[100%] w-[110px] lg:text-left text-center lg:px-8 lg:gap-12 h-[110px] lg:h-28 rounded-[40px] cursor-pointer shadow-md flex lg:flex-row flex-col justify-center lg:justify-around items-center text-white lg:text-xl text-sm lg:font-semibold duration-200 transition-colors ease-in-out ${interest === cpc ? "bg-blue-700" : "bg-gray-800"}`} onClick={() => setInterest(cpc)}>
             <Image className='lg:w-16 w-12 h-auto' src={cpcIcon} alt="" loading="lazy" />
             <h3 className='w-[80%]'>

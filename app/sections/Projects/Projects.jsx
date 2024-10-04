@@ -11,7 +11,7 @@ import { ChevronLeft, ChevronRight, ChevronDown } from 'lucide-react'
 const PROJECTS_PER_PAGE = 9
 
 export default function Projects() {
-  const categories = ['All', 'Web', 'Mobile', 'Desktop', 'Game dev', 'Embedded systems', 'cybersecurity']
+  const categories = ['All', 'Web', 'Mobile', 'Desktop', 'Game dev', 'Embedded systems', 'Cybersecurity']
 
   const [isSmall, setIsSmall] = useState(false)
   const [showPopup, setShowPopup] = useState(false)
@@ -24,7 +24,7 @@ export default function Projects() {
 
   const filteredProjects = filter === 'All' 
     ? projects 
-    : projects.filter(project => project.category === filter)
+    : projects.filter(project => project.tags.includes(filter))
 
   const totalPages = Math.ceil(filteredProjects.length / PROJECTS_PER_PAGE)
 
@@ -106,7 +106,7 @@ export default function Projects() {
           </button>
           <div 
             className={`absolute z-10 w-full mt-1 bg-gray-800 rounded-md shadow-lg overflow-hidden transition-all duration-200 ease-in-out ${
-              isDropdownOpen ? 'max-h-60 opacity-100' : 'max-h-0 opacity-0'
+              isDropdownOpen ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'
             }`}
           >
             {categories.map((category) => (
@@ -139,7 +139,9 @@ export default function Projects() {
         </div>
       )}
 
-      {!isSmall ? (
+      {isSmall ? (
+        <ProjectsSlider showPopup={showPopup} openPopup={openPopup} projects={filteredProjects} />
+      ) : (
         <>
           <div className="w-[60%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {paginatedProjects.map((project, index) => (
@@ -178,8 +180,6 @@ export default function Projects() {
             </div>
           )}
         </>
-      ) : (
-        <ProjectsSlider showPopup={showPopup} openPopup={openPopup} projects={filteredProjects} />
       )}
     </div>
   )

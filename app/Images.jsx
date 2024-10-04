@@ -29,5 +29,14 @@ import ensi from './assets/ensi.png'
 import robot from './assets/3jeli.png'
 import sniffer from './assets/sniffer.png'
 import station from './assets/station.jpg'
+import php from './assets/icons/php-original.svg'
+import flutter from './assets/icons/flutter.svg'
+import arduino from './assets/icons/arduino.svg'
+import powershell from './assets/icons/powershell.svg'
+import raspberryPiPico from './assets/icons/raspberrypi-pico.svg'
+import visualbasic from './assets/icons/visualbasic.svg'
 
-export { me, icon1, icon2, icon3, icon4, react, html, css, js, flask, csharp, cplusplus, express, figma, canva, solidworks, catia, autocad, photoshop, illustrator, unity, tailwindcss, python, logo, ensi, robot, sniffer, station, cpcIcon, securityIcon, roboticsIcon};
+
+
+
+export { php, flutter, arduino, powershell, raspberryPiPico, visualbasic, me, icon1, icon2, icon3, icon4, react, html, css, js, flask, csharp, cplusplus, express, figma, canva, solidworks, catia, autocad, photoshop, illustrator, unity, tailwindcss, python, logo, ensi, robot, sniffer, station, cpcIcon, securityIcon, roboticsIcon};

@@ -24,6 +24,8 @@ import { robot } from './Images'
 import { sniffer } from './Images'
 import { station } from './Images'
 
+import images from './Images'
+
 const cpc = [
     {
         image: cpc3,
@@ -91,61 +93,296 @@ const projects = [
         image: logo,
         name: "Brika",
         url: "https://github.com/riahifiras/recipe-website",
-        description: "A social network enabling users to share their favorite recipes, fostering a community of food enthusiasts."
+        description: "A social network enabling users to share their favorite recipes, fostering a community of food enthusiasts.",
+        tags: ["Web"],
+        technologies: [
+            {
+                // icon: images.html,
+                name: "HTML",
+                link: "https://developer.mozilla.org/en-US/docs/Web/HTML"
+            },
+            {
+                // icon: images.css,
+                name: "CSS",
+                link: "https://developer.mozilla.org/en-US/docs/Web/CSS"
+            },
+            {
+                // icon: images.js,
+                name: "JavaScript",
+                link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+            },
+            {
+                // icon: images.php,
+                name: "PHP",
+                link: "https://www.php.net/docs.php"
+            },
+            {
+                // icon: images.mysql,
+                name: "MySQL",
+                link: "https://dev.mysql.com/doc/"
+            },
+        ],
+        collaborators: []
     },
     {
         image: rise,
         name: "Rise Stock Manager",
         url: "https://github.com/riahifiras/stock-managment-app",
-        description: "An intricately designed desktop application for stock management, tailored for a company specializing in the field of hydraulics and environmental solutions."
+        description: "An intricately designed desktop application for stock management, tailored for a company specializing in the field of hydraulics and environmental solutions.",
+        tags: ["Desktop"],
+        technologies: [
+            {
+                // icon: images.python,
+                name: "Python",
+                link: "https://docs.python.org/3/"
+            },
+            {
+                // icon: images.python,
+                name: "Tkinter",
+                link: "https://docs.python.org/3/library/tk.html"
+            },
+        ],
+        collaborators: []
     },
     {
         image: cluedo,
         name: "Cluedo",
         url: "https://github.com/riahifiras/cluedo",
-        description: "A digital adaptation of the beloved board game, Cluedo, bringing its classic mystery-solving experience to the digital realm."
+        description: "A digital adaptation of the beloved board game, Cluedo, bringing its classic mystery-solving experience to the digital realm.",
+        tags: ["Game dev"],
+        technologies: [
+            {
+                // icon: images.python,
+                name: "Python",
+                link: "https://docs.python.org/3/"
+            },
+            {
+                // icon: images.python,
+                name: "PyGame",
+                link: "https://www.pygame.org/docs/"
+            },
+        ],
+        collaborators: []
     },
     {
         image: stonks,
         name: "Stonks",
         url: "https://github.com/MedAziz218/Stock-Manager",
-        description: "A command-line interface application with powerful features for efficient stock management within stores, boasting an intuitive design."
+        description: "A command-line interface application with powerful features for efficient stock management within stores, boasting an intuitive design.",
+        tags: ["Desktop"],
+        technologies: [
+            {
+                // icon: images.cplusplus,
+                name: "C",
+                link: "https://en.cppreference.com/w/c/language"
+            },
+        ],
+        collaborators: []
     },
     {
         image: robot,
         name: "Line follower robot",
         url: "https://github.com/MedAziz218/Line-Follower-Arduino-code",
-        description: "A precision-engineered robot capable of flawlessly tracking black lines on white surfaces, offering remarkable speed and accuracy."
+        description: "A precision-engineered robot capable of flawlessly tracking black lines on white surfaces, offering remarkable speed and accuracy.",
+        tags: ["Embedded systems"],
+        technologies: [
+            {
+                // icon: images.cplusplus,
+                name: "C++",
+                link: "https://en.cppreference.com/w/c/language"
+            },
+            {
+                // icon: images.python,
+                name: "Python",
+                link: "https://docs.python.org/3/"
+            },
+            {
+                // icon: images.arduino,
+                name: "Arduino",
+                link: "https://www.arduino.cc/reference/en/"
+            },
+            {
+                // icon: images.python,
+                name: "ESP32",
+                link: "https://www.espressif.com/en/products/socs/esp32/resources"
+            },
+            {
+                // icon: images.solidworks,
+                name: "SolidWorks",
+                link: "https://www.solidworks.com/sw/resources/getting-started.htm"
+            },
+        ],
+        collaborators: []
     },
     {
         image: cheese,
         name: "Jben Overdose",
         url: "https://github.com/riahifiras/Jben-overdose",
-        description: "An online platform catering to cheesecake enthusiasts, featuring an extensive assortment of meticulously curated cheesecakes for purchase and review."
+        description: "An online platform catering to cheesecake enthusiasts, featuring an extensive assortment of meticulously curated cheesecakes for purchase and review.",
+        tags: ["Web"],
+        technologies: [
+            {
+                // icon: images.python,
+                name: "MongoDB",
+                link: "https://www.mongodb.com/docs/"
+            },
+            {
+                // icon: images.express,
+                name: "ExpressJS",
+                link: "https://expressjs.com/"
+            },
+            {
+                // icon: images.react,
+                name: "ReactJS",
+                link: "https://react.dev/learn"
+            },
+            {
+                // icon: images.node,
+                name: "NodeJS",
+                link: "https://nodejs.org/en/docs"
+            },
+        ],
+        collaborators: []
     },
     {
         image: ensi,
         name: "Madara in Manouba",
         url: "https://github.com/riahifiras/Madara-in-Manouba",
-        description: "Embark on an epic adventure as Uchiha Madara in the mystical land of Manouba! This Unity game offers an immersive journey through the enigmatic landscapes of Tunisia's Manouba state, inspired by the Naruto universe."
+        description: "Embark on an epic adventure as Uchiha Madara in the mystical land of Manouba! This Unity game offers an immersive journey through the enigmatic landscapes of Tunisia's Manouba state, inspired by the Naruto universe.",
+        tags: ["Game dev"],
+        technologies: [
+            {
+                // icon: images.csharp,
+                name: "C#",
+                link: "https://learn.microsoft.com/en-us/dotnet/csharp/"
+            },
+            {
+                // icon: images.unity,
+                name: "Unity",
+                link: "https://docs.unity3d.com/Manual/index.html"
+            },
+        ],
+        collaborators: []
     },
     {
         image: station,
         name: "Game Station",
         url: "https://github.com/riahifiras/Game-station",
-        description: "Indulge in nostalgia with this collection of four classic games written in C using the SFML library. Rediscover the joy of Snake, Minesweeper, 2048, and Sudoku, all bundled into one convenient package."
+        description: "Indulge in nostalgia with this collection of four classic games written in C using the SFML library. Rediscover the joy of Snake, Minesweeper, 2048, and Sudoku, all bundled into one convenient package.",
+        tags: ["Game dev"],
+        technologies: [
+            {
+                // icon: images.cplusplus,
+                name: "C++",
+                link: "https://en.cppreference.com/w/cpp/language"
+            },
+            {
+                // icon: images.python,
+                name: "SFML",
+                link: "https://www.sfml-dev.org/documentation/2.5.1/"
+            },
+        ],
+        collaborators: []
     },
     {
         image: sniffer,
         name: "Packet Sniffer",
         url: "https://github.com/riahifiras/Packet-sniffer",
-        description: "A Python application empowering users to intercept and analyze network packets traversing through their network infrastructure."
+        description: "A Python application empowering users to intercept and analyze network packets traversing through their network infrastructure.",
+        tags: ["Desktop", "Cybersecurity"],
+        technologies: [
+            {
+                // icon: images.python,
+                name: "Python",
+                link: "https://docs.python.org/3/"
+            },
+        ],
+        collaborators: []
     },
     {
         image: sniffer,
-        name: "Packet Sniffer",
+        name: "USB rubber ducky",
         url: "https://github.com/riahifiras/Packet-sniffer",
-        description: "A Python application empowering users to intercept and analyze network packets traversing through their network infrastructure."
+        description: "A Python application empowering users to intercept and analyze network packets traversing through their network infrastructure.",
+        tags: ["Desktop", "Cybersecurity"],
+        technologies: [
+            {
+                // icon: images.python,
+                name: "Python",
+                link: "https://docs.python.org/3/"
+            },
+            {
+                // icon: images.raspberryPiPico,
+                name: "Raspberry Pi Pico",
+                link: "https://www.raspberrypi.com/documentation/microcontrollers/"
+            },
+        ],
+        collaborators: []
+    },
+    {
+        image: sniffer,
+        name: "RAT",
+        url: "https://github.com/riahifiras/Packet-sniffer",
+        description: "A Python application empowering users to intercept and analyze network packets traversing through their network infrastructure.",
+        tags: ["Desktop", "Cybersecurity"],
+        technologies: [
+            {
+                // icon: images.python,
+                name: "Batch",
+                link: "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands"
+            },
+            {
+                // icon: images.python,
+                name: "Powershell",
+                link: "https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.2"
+            },
+            {
+                // icon: images.python,
+                name: "VBS",
+                link: "https://learn.microsoft.com/en-us/previous-versions//scripting/developer/script56/html/vtorivbscriptoverview.asp"
+            },
+        ],
+        collaborators: []
+    },
+    {
+        image: sniffer,
+        name: "MedicaConsult",
+        url: "https://github.com/riahifiras/Packet-sniffer",
+        description: "A Python application empowering users to intercept and analyze network packets traversing through their network infrastructure.",
+        tags: ["Desktop", "Cybersecurity"],
+        technologies: [
+            {
+                // icon: images.python,
+                name: "Flutter",
+                link: "https://docs.flutter.dev/"
+            },
+            {
+                // icon: images.python,
+                name: "Firebase",
+                link: "https://firebase.google.com/docs"
+            },
+        ],
+        collaborators: []
+    },
+    {
+        image: sniffer,
+        name: "EPIC task manager",
+        url: "https://github.com/riahifiras/Packet-sniffer",
+        description: "A Python application empowering users to intercept and analyze network packets traversing through their network infrastructure.",
+        tags: ["Desktop", "Cybersecurity"],
+        technologies: [
+            {
+                // icon: images.python,
+                name: "Flutter",
+                link: "https://docs.flutter.dev/"
+            },
+            {
+                // icon: images.python,
+                name: "Gemini",
+                link: "https://gemini.cobaltspeech.com/docs/guides"
+            },
+        ],
+        collaborators: []
     },
 ];
 

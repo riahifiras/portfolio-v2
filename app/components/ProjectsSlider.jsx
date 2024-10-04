@@ -3,9 +3,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import Project from './Project'
-import { projects } from "../data";
 
-const ProjectsSlider = ({showPopup, openPopup}) => {
+const ProjectsSlider = ({showPopup, openPopup, projects}) => {
     var settings = {
         dots: true,
         infinite: true,

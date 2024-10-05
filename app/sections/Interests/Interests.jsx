@@ -14,7 +14,7 @@ const Interests = () => {
   const { darkMode } = useContext(DarkModeContext);
 
   return (
-    <div id='Interests' className={`w-full lg:h-[92vh] flex flex-col justify-around -translate-y-24 gap-6 lg:gap-0 my-10 ${darkMode ? "bg-[#cbd4d4]" : "bg-[#16181d]"}`}>
+    <div id='Interests' className={`w-full lg:h-[92vh] flex flex-col justify-around -translate-y-24 gap-6 lg:gap-0 mt-10 ${darkMode ? "bg-[#cbd4d4]" : "bg-[#16181d]"}`}>
 
 
       <div className='flex flex-col w-full lg:px-40 px-10'>

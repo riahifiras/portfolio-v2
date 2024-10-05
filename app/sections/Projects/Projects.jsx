@@ -86,7 +86,7 @@ export default function Projects() {
   return (
     <div id='Projects' className={`${darkMode ? "bg-[#cbd4d4]" : "bg-[#16181d]"} flex flex-col lg:text-center text-left items-center lg:min-h-screen -mt-28 lg:gap-10 gap-6 py-10`}>
       {showPopup && <ProjectPopup info={selectedProject} onClose={closePopup} />}
-      <hr className='border- border-gray-400 rounded-full w-[90%]' />
+      <hr className='border-gray-400 rounded-full w-[90%]' />
 
       <h1 className={`lg:text-6xl text-5xl font-semibold ${darkMode ? "text-black" : "text-white"}`}>My recent work</h1>
       <h3 className={`lg:text-xl text-center ${darkMode ? "text-black" : "text-white"}`}>Here are a few projects I&#39;ve worked on. Want to see more? <a className='text-blue-700' href="#Contact">Contact me</a>.</h3>

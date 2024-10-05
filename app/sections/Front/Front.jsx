@@ -59,9 +59,12 @@ const Front = () => {
                 </span>
                 <Cursor />
               </h3>
-              <button onClick={handleDownload} className='unselectable z-30 flex justify-center items-center h-10 w-36 mt-6 rounded-full bg-blue-700 text-white text-md font-semibold hover:bg-blue-600 transition duration-200'>Download CV</button>
+              <div className=" flex lg:gap-4 gap-2 lg:flex-row flex-col mt-6">
+              <button onClick={handleDownload} className='unselectable z-30 flex justify-center items-center h-12 w-36 rounded-full bg-gray-800 text-white text-xl font-semibold hover:bg-gray-700 transition duration-200'>Contact me</button>
+              <button onClick={handleDownload} className='unselectable z-30 flex justify-center items-center h-12 w-36 rounded-full bg-blue-700 text-white text-xl font-semibold hover:bg-blue-600 transition duration-200'>Get Resume</button>
+              </div>
             </div>
-            <Image src={me} alt="" className='unselectable  -translate-y-20 lg:-translate-y-0 absolute lg:right-40 -bottom-16 lg:h-[90%] h-[60%] w-auto' loading="lazy"/>
+            <Image src={me} alt="" className='unselectable  -translate-y-20 lg:-translate-y-0 absolute lg:right-40 -bottom-16 lg:h-[80%] xl:h-[90%] h-[60%] w-auto' loading="lazy"/>
           </div>
         </div>
       ) : (

@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Image from "next/image";
-import ProjectPopup from "./ProjectPopup";
 
 const Project = ({ showPopup, openPopup, image, url, name }) => {
   // console.log(showPopup);

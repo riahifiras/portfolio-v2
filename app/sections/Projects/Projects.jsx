@@ -33,13 +33,10 @@ export default function Projects() {
     currentPage * PROJECTS_PER_PAGE
   )
 
-  const openPopup = (image, name, url, description) => {
-    setSelectedProject({
-      image,
-      name,
-      url,
-      description
-    })
+  const openPopup = (project) => {
+    setSelectedProject(
+      {...project}
+    )
     setShowPopup(true)
   }
   
@@ -148,7 +145,7 @@ export default function Projects() {
               <Project
                 key={index}
                 showPopup={showPopup}
-                openPopup={() => openPopup(project.image, project.name, project.url, project.description)}
+                openPopup={() => openPopup(project)}
                 image={project.image}
                 name={project.name}
                 url={project.url}

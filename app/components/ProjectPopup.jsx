@@ -123,9 +123,7 @@ export default function ProjectPopup({ info, onClose }) {
                                             <Image
                                                 src={collaborator.picture}
                                                 alt={collaborator.name}
-                                                width={60}
-                                                height={60}
-                                                className="rounded-full transition-transform duration-300 transform group-hover:scale-110"
+                                                className="rounded-full w-16 h-16 transition-transform duration-300 transform object-cover group-hover:scale-110"
                                             />
                                             <div className="absolute left-1/2 transform -translate-x-1/2 bg-gray-800 text-white px-2 py-1 rounded text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-10 w-max">
                                                 <p>{collaborator.name}</p>

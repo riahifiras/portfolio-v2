@@ -155,6 +155,10 @@ const ctf = [
 
 const testimonies = [
     {
+        person: people[6],
+        testimony: "If ever in doubt, you can always turn to Firas Riahi. As a friend and a colleague, I count myself very lucky to have worked with this guy on several occasions, each one a remarkable unique experience that i treasure.  Firas welcomed me with open arms whenever I needed it, never failing to give me motivation to carry on. This guy can shine brighter than the stars in the darkest of nights, with what he brings to the table I will always consider myself a winner to have met him, known him and worked with him. I am thankful to have someone in my life as enthusiastic and motivated as Firas, his heart is one of the biggest to encounter in a lifetime and I know one day he will conquer the world in his own ways."
+    },
+    {
         person: people[8],
         testimony: "Firas is not only my closest friend but also the best partner I could ever ask for in all the projects, labs, and assignments we've tackled together. His kindness, unwavering work ethic, and the 100% effort he brings to everything he does make him a truly exceptional teammate. He’s incredibly productive, always approaching challenges with a positive attitude and a kind heart. Whether it’s brainstorming late at night or powering through complex tasks, Firas is the one person I know I can count on. I'm lucky to call him both my teammate and my friend."
     },
@@ -163,21 +167,9 @@ const testimonies = [
         testimony: "Firas is very enthusiastic, creative and it was great to work with him. He is also very tall. You might break your neck trying to look at him."
     },
     {
-        person: people[8],
-        testimony: "Firas is not only my closest friend but also the best partner I could ever ask for in all the projects, labs, and assignments we've tackled together. His kindness, unwavering work ethic, and the 100% effort he brings to everything he does make him a truly exceptional teammate. He’s incredibly productive, always approaching challenges with a positive attitude and a kind heart. Whether it’s brainstorming late at night or powering through complex tasks, Firas is the one person I know I can count on. I'm lucky to call him both my teammate and my friend."
-    }, {
-        person: people[2],
-        testimony: "Firas is very enthusiastic, create and it was great to work with him. He is also very tall. You might break your neck trying to look at him."
-    },
-    {
-        person: people[8],
-        testimony: "Firas is not only my closest friend but also the best partner I could ever ask for in all the projects, labs, and assignments we've tackled together. His kindness, unwavering work ethic, and the 100% effort he brings to everything he does make him a truly exceptional teammate. He’s incredibly productive, always approaching challenges with a positive attitude and a kind heart. Whether it’s brainstorming late at night or powering through complex tasks, Firas is the one person I know I can count on. I'm lucky to call him both my teammate and my friend."
-    },
-    {
-        person: people[2],
-        testimony: "Firas is very enthusiastic, create and it was great to work with him. He is also very tall. You might break your neck trying to look at him."
+        person: people[0],
+        testimony: "Firas is that spark of fire that brings enthusiasm and motivation to them team, leading others to great heights. He is without a doubt one of the finest and smartest developers out there and his spirit is unlike any other as he can create any project he puts his mind into."
     }
-
 ]
 
 
@@ -279,7 +271,7 @@ const projects = [
             },
         ],
         usefulDocs: [],
-        collaborators: [people[0], people[2], people[6]]
+        collaborators: [people[6], people[2], people[0]]
     },
     {
         image: robot,

@@ -6,7 +6,7 @@ import Project from './Project'
 
 const ProjectsSlider = ({showPopup, openPopup, projects}) => {
     var settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,

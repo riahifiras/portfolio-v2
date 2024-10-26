@@ -93,7 +93,7 @@ function TestimonyCard({ item }) {
                     </p>
 
                     <div>
-                        <h3 className="font-semibold text-md">{item.person.name}</h3>
+                        <h3 className={`${!darkMode ? "text-gray-200" : "text-gray-800"} font-semibold text-md`}>{item.person.name}</h3>
                         <p className={`${!darkMode ? "text-gray-200" : "text-gray-800"} text-sm`}>{item.person.description}</p>
                         <a
                             href={item.person.link}

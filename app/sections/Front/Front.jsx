@@ -35,9 +35,14 @@ const Front = () => {
 
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = `${import.meta.env.BASE_URL}/CVang.pdf`; // Adjust the path
-    console.log(link.href);
-    link.download = 'CV.pdf';
+    link.href = `https://drive.google.com/file/d/1CtzGPhT9hTV77TaK5uulSe5_2OGQ9l1q/view?usp=sharing`;
+    link.target = '_blank';
+    link.click();
+  };
+
+  const handleContact = () => {
+    const link = document.createElement('a');
+    link.href = `#Contact`;
     link.click();
   };
 
@@ -60,7 +65,7 @@ const Front = () => {
                 <Cursor />
               </h3>
               <div className=" flex lg:gap-4 gap-2 lg:flex-row flex-col mt-6">
-              <button onClick={handleDownload} className='unselectable z-30 flex justify-center items-center h-12 w-36 rounded-full bg-gray-800 text-white text-xl font-semibold hover:bg-gray-700 transition duration-200'>Contact me</button>
+              <button onClick={handleContact} className='unselectable z-30 flex justify-center items-center h-12 w-36 rounded-full bg-gray-800 text-white text-xl font-semibold hover:bg-gray-700 transition duration-200'>Contact me</button>
               <button onClick={handleDownload} className='unselectable z-30 flex justify-center items-center h-12 w-36 rounded-full bg-blue-700 text-white text-xl font-semibold hover:bg-blue-600 transition duration-200'>Get Resume</button>
               </div>
             </div>

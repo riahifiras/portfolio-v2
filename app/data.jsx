@@ -21,7 +21,7 @@ import cluedo from './assets/clue.jpg'
 import rise from './assets/rise.png'
 import cheese from './assets/cheese.png'
 import stonks from './assets/stonks.png'
-import { logo, ensi, robot, sniffer, station, html, css, js, php, mysql, python, cplusplus, arduino, solidworks, express, react, csharp, unity, raspberryPiPico, node, mongo, powershell, visualbasic, flutter, tk, pygame, espressif, sfml, batch, firebase, gemini, proteus, wazuh, hive, cortex, misp, shuffle, opnsense, suricata, azure, docker, next, aws, saif, malak, aziz, gassara, marwane, mrad, marie, safwen, eya } from './Images'
+import { ducky, eje, ezticks, medica, rat, soc, wiz, sniffer2, logo, ensi, robot, sniffer, station, html, css, js, php, mysql, python, cplusplus, arduino, solidworks, express, react, csharp, unity, raspberryPiPico, node, mongo, powershell, visualbasic, flutter, tk, pygame, espressif, sfml, batch, firebase, gemini, proteus, wazuh, hive, cortex, misp, shuffle, opnsense, suricata, azure, docker, next, aws, saif, malak, aziz, gassara, marwane, mrad, marie, safwen, eya } from './Images'
 
 const people = [
     {
@@ -392,7 +392,7 @@ const projects = [
         collaborators: []
     },
     {
-        image: sniffer,
+        image: sniffer2,
         name: "Packet Sniffer",
         url: "https://github.com/riahifiras/Packet-sniffer",
         demo : "",
@@ -409,11 +409,11 @@ const projects = [
         collaborators: []
     },
     {
-        image: stonks,
+        image: ducky,
         name: "USB rubber ducky",
         url: "",
         demo : "",
-        description: "A Python application empowering users to intercept and analyze network packets traversing through their network infrastructure.",
+        description: "A DIY USB rubber ducky using a Raspberry Pi Pico to simulate keyboard inputs for penetration testing and scripting automation.",
         tags: ["Cybersecurity", "Embedded systems"],
         technologies: [
             {
@@ -425,17 +425,17 @@ const projects = [
                 icon: raspberryPiPico,
                 name: "Raspberry Pi Pico",
                 link: "https://www.raspberrypi.com/documentation/microcontrollers/"
-            },
+            }
         ],
         usefulDocs: [],
         collaborators: [people[4], people[5]]
     },
     {
-        image: stonks,
+        image: rat,
         name: "RAT",
         url: "https://github.com/riahifiras/RAT",
         demo : "",
-        description: "A Python application empowering users to intercept and analyze network packets traversing through their network infrastructure.",
+        description: "A Remote Access Tool for remote control and monitoring of a target system, featuring batch, PowerShell, and VBS scripts.",
         tags: ["Cybersecurity"],
         technologies: [
             {
@@ -452,17 +452,17 @@ const projects = [
                 icon: visualbasic,
                 name: "VBS",
                 link: "https://learn.microsoft.com/en-us/previous-versions//scripting/developer/script56/html/vtorivbscriptoverview.asp"
-            },
+            }
         ],
         usefulDocs: [],
         collaborators: [people[4], people[5]]
     },
     {
-        image: stonks,
+        image: medica,
         name: "MedicaConsult",
         url: "https://github.com/MaryemLahmer/MedicaConsult",
         demo : "",
-        description: "A Python application empowering users to intercept and analyze network packets traversing through their network infrastructure.",
+        description: "A mobile application providing online consultation and appointment booking features for healthcare services.",
         tags: ["Mobile"],
         technologies: [
             {
@@ -474,17 +474,17 @@ const projects = [
                 icon: firebase,
                 name: "Firebase",
                 link: "https://firebase.google.com/docs"
-            },
+            }
         ],
         usefulDocs: [],
         collaborators: [people[6], people[7]]
     },
     {
-        image: stonks,
+        image: wiz,
         name: "EPIC task manager",
         url: "https://github.com/riahifiras/Minimal-gemini-api-intercation",
         demo : "",
-        description: "A Python application empowering users to intercept and analyze network packets traversing through their network infrastructure.",
+        description: "A task management app with streamlined task creation and tracking, integrating Gemini API for optimized performance.",
         tags: ["Mobile"],
         technologies: [
             {
@@ -496,17 +496,17 @@ const projects = [
                 icon: gemini,
                 name: "Gemini",
                 link: "https://gemini.cobaltspeech.com/docs/guides"
-            },
+            }
         ],
         usefulDocs: [],
         collaborators: [people[0]]
     },
     {
-        image: stonks,
+        image: soc,
         name: "SOC architecture",
         url: "https://github.com/riahifiras/soc-architecture",
         demo : "",
-        description: "A Python application empowering users to intercept and analyze network packets traversing through their network infrastructure.",
+        description: "A complete SOC design for centralized monitoring and threat detection using tools like Wazuh, TheHive, and Cortex.",
         tags: ["Cybersecurity"],
         technologies: [
             {
@@ -526,7 +526,7 @@ const projects = [
             },
             {
                 icon: misp,
-                name: "Misp",
+                name: "MISP",
                 link: "https://www.misp-project.org/documentation/"
             },
             {
@@ -559,11 +559,11 @@ const projects = [
         collaborators: [people[0], people[5]]
     },
     {
-        image: stonks,
+        image: eje,
         name: "ENSI Junior Entreprise website",
         url: "https://github.com/ENSIJuniorEntreprise/EJE",
         demo : "",
-        description: "A Python application empowering users to intercept and analyze network packets traversing through their network infrastructure.",
+        description: "A web platform for ENSI Junior Entreprise, facilitating project showcase, client interactions, and team collaboration.",
         tags: ["Web"],
         technologies: [
             {
@@ -591,11 +591,11 @@ const projects = [
         collaborators: []
     },
     {
-        image: stonks,
+        image: ezticks,
         name: "EZticks",
         url: "https://github.com/riahifiras/Packet-sniffer",
         demo : "",
-        description: "A Python application empowering users to intercept and analyze network packets traversing through their network infrastructure.",
+        description: "A ticket management system for handling customer queries, built with NextJS and hosted on AWS.",
         tags: ["Web"],
         technologies: [
             {
@@ -612,6 +612,7 @@ const projects = [
         usefulDocs: [],
         collaborators: []
     }
+    
     
 ];
 

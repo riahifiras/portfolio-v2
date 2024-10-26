@@ -29,6 +29,14 @@ import logo from './assets/logo.png'
 import ensi from './assets/ensi.png'
 import robot from './assets/3jeli.png'
 import sniffer from './assets/sniffer.png'
+import ezticks from './assets/ezticks.png'
+import medica from './assets/medica.png'
+import rat from './assets/rat.png'
+import sniffer2 from './assets/sniffer2.png'
+import eje from './assets/eje.png'
+import soc from './assets/soc.png'
+import wiz from './assets/wiz.png'
+import ducky from './assets/ducky.png'
 import station from './assets/station.jpg'
 import php from './assets/icons/php-original.svg'
 import flutter from './assets/icons/flutter.svg'
@@ -71,4 +79,4 @@ import eya from './assets/people/eya.jpg'
 
 
 
-export { eya, saif, safwen, marwane, marie, mrad, gassara, aziz, malak, docker, mysql, aws, azure, cortex, hive, misp, next, opnsense, shuffle, suricata, wazuh, proteus, gemini, batch, espressif, pygame, tk, sfml, firebase, mongo, node, php, flutter, arduino, powershell, raspberryPiPico, visualbasic, me, icon1, icon2, icon3, icon4, react, html, css, js, flask, csharp, cplusplus, express, figma, canva, solidworks, catia, autocad, photoshop, illustrator, unity, tailwindcss, python, logo, ensi, robot, sniffer, station, cpcIcon, securityIcon, roboticsIcon };
+export { eya, saif, safwen, marwane, marie, mrad, gassara, aziz, malak, docker, mysql, aws, azure, cortex, hive, misp, next, opnsense, shuffle, suricata, wazuh, proteus, gemini, batch, espressif, pygame, tk, sfml, firebase, mongo, node, php, flutter, arduino, powershell, raspberryPiPico, visualbasic, me, icon1, icon2, icon3, icon4, react, html, css, js, flask, csharp, cplusplus, express, figma, canva, solidworks, catia, autocad, photoshop, illustrator, unity, tailwindcss, python, logo, ensi, robot, sniffer, station, cpcIcon, securityIcon, roboticsIcon, ezticks, medica, rat, soc, wiz, sniffer2, eje, ducky };

@@ -67,7 +67,23 @@ const BlogPopup = ({ isOpen, onClose, post }) => {
                             h2: ({node, ...props}) => <h2 className={`text-xl sm:text-2xl font-semibold ${
                                 !darkMode ? 'text-white' : 'text-black'
                             } mt-6 mb-3`} {...props} />,
+                            h3: ({node, ...props}) => <h2 className={`text-lg sm:text-xl font-semibold ${
+                                !darkMode ? 'text-white' : 'text-black'
+                            } mt-6 mb-3`} {...props} />,
+                            h4: ({node, ...props}) => <h2 className={`text-md sm:text-lg font-semibold ${
+                                !darkMode ? 'text-white' : 'text-black'
+                            } mt-6 mb-3`} {...props} />,
+                            h5: ({node, ...props}) => <h2 className={`text-sm sm:text-md font-semibold ${
+                                !darkMode ? 'text-white' : 'text-black'
+                            } mt-6 mb-3`} {...props} />,
+
+                            h6: ({node, ...props}) => <h2 className={`text-xs sm:text-sm font-semibold ${
+                                !darkMode ? 'text-white' : 'text-black'
+                            } mt-6 mb-3`} {...props} />,
                             p: ({node, ...props}) => <p className={`${
+                                !darkMode ? 'text-gray-300' : 'text-gray-700'
+                            } mb-4`} {...props} />,
+                            li: ({node, ...props}) => <li className={`${
                                 !darkMode ? 'text-gray-300' : 'text-gray-700'
                             } mb-4`} {...props} />,
                             a: ({node, ...props}) => <a className={`${

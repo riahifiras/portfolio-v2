@@ -20,29 +20,31 @@ const BlogPopup = ({ isOpen, onClose, post }) => {
 
         if (isOpen) {
             document.addEventListener('mousedown', handleClickOutside);
+            document.body.style.overflow = 'hidden';
         }
 
         return () => {
             document.removeEventListener('mousedown', handleClickOutside);
+            document.body.style.overflow = 'unset';
         };
     }, [isOpen, onClose]);
 
-    if (!isOpen) return null;
+    if (!isOpen || !post) return null;
 
     return (
-        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center p-4">
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4 sm:p-0 overflow-y-auto">
             <div 
                 ref={popupRef} 
                 className={`${
                     !darkMode ? 'bg-gray-800' : 'bg-gray-100'
-                } rounded-lg w-full max-w-4xl max-h-[90vh] overflow-hidden flex flex-col`}
+                } rounded-lg w-full max-w-4xl max-h-[90vh] flex flex-col overflow-hidden`}
             >
                 <div className={`sticky top-0 ${
                     !darkMode ? 'bg-gray-900' : 'bg-white'
                 } p-4 flex justify-between items-center border-b ${
                     !darkMode ? 'border-gray-700' : 'border-gray-200'
                 }`}>
-                    <h2 className={`text-2xl font-bold ${
+                    <h2 className={`text-xl sm:text-2xl font-bold ${
                         !darkMode ? 'text-white' : 'text-black'
                     }`}>{post.title}</h2>
                     <button
@@ -50,18 +52,19 @@ const BlogPopup = ({ isOpen, onClose, post }) => {
                         className={`${
                             !darkMode ? 'text-gray-400 hover:text-gray-200' : 'text-gray-500 hover:text-gray-700'
                         }`}
+                        aria-label="Close"
                     >
                         <X className="w-6 h-6" />
                     </button>
                 </div>
-                <div className="p-6 overflow-y-auto flex-grow">
+                <div className="p-4 sm:p-6 overflow-y-auto flex-grow">
                     <ReactMarkdown 
                         className={`prose ${!darkMode ? 'prose-invert' : ''} max-w-none`}
                         components={{
-                            h1: ({node, ...props}) => <h1 className={`text-3xl font-bold ${
+                            h1: ({node, ...props}) => <h1 className={`text-2xl sm:text-3xl font-bold ${
                                 !darkMode ? 'text-white' : 'text-black'
                             } mb-4`} {...props} />,
-                            h2: ({node, ...props}) => <h2 className={`text-2xl font-semibold ${
+                            h2: ({node, ...props}) => <h2 className={`text-xl sm:text-2xl font-semibold ${
                                 !darkMode ? 'text-white' : 'text-black'
                             } mt-6 mb-3`} {...props} />,
                             p: ({node, ...props}) => <p className={`${
@@ -79,7 +82,7 @@ const BlogPopup = ({ isOpen, onClose, post }) => {
                                         style={vscDarkPlus}
                                         language={match[1]}
                                         PreTag="div"
-                                        className="rounded-md"
+                                        className="rounded-md text-sm"
                                         {...props}
                                     >
                                         {String(children).replace(/\n$/, '')}
@@ -87,7 +90,7 @@ const BlogPopup = ({ isOpen, onClose, post }) => {
                                 ) : (
                                     <code className={`${
                                         !darkMode ? 'bg-gray-700 text-gray-200' : 'bg-gray-200 text-gray-800'
-                                    } rounded px-1 py-0.5`} {...props}>
+                                    } rounded px-1 py-0.5 text-sm`} {...props}>
                                         {children}
                                     </code>
                                 )

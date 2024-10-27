@@ -16,6 +16,7 @@ import robotics3 from "./assets/robotics3.jpg";
 import robotics4 from "./assets/robotics4.jpg";
 import robotics5 from "./assets/robotics5.jpg";
 import robotics6 from "./assets/robotics6.jpg";
+import robotics7 from "./assets/robotics7.jpg";
 
 import cluedo from './assets/clue.jpg'
 import rise from './assets/rise.png'
@@ -107,6 +108,10 @@ const robotics = [
     {
         image: robotics4,
         description: "My first-ever line-following robot."
+    },
+    {
+        image: robotics7,
+        description: "The team i build my first line following robot with."
     },
     {
         image: robotics2,
@@ -413,19 +418,11 @@ const projects = [
         name: "USB rubber ducky",
         url: "",
         demo : "",
-        description: "A DIY USB rubber ducky using a Raspberry Pi Pico to simulate keyboard inputs for penetration testing and scripting automation.",
+        description: "A custom-built device that acts as a programmable keyboard emulator, automating sequences of keystrokes to simulate rapid, complex inputs. Ideal for penetration testing, it can be loaded with scripts to test system defenses or automate repetitive tasks with ease. This tool leverages compact microcontroller technology, making it portable and adaptable.",
         tags: ["Cybersecurity", "Embedded systems"],
         technologies: [
-            {
-                icon: python,
-                name: "Python",
-                link: "https://docs.python.org/3/"
-            },
-            {
-                icon: raspberryPiPico,
-                name: "Raspberry Pi Pico",
-                link: "https://www.raspberrypi.com/documentation/microcontrollers/"
-            }
+            { icon: python, name: "Python", link: "https://docs.python.org/3/" },
+            { icon: raspberryPiPico, name: "Raspberry Pi Pico", link: "https://www.raspberrypi.com/documentation/microcontrollers/" }
         ],
         usefulDocs: [],
         collaborators: [people[4], people[5]]
@@ -435,24 +432,12 @@ const projects = [
         name: "RAT",
         url: "https://github.com/riahifiras/RAT",
         demo : "",
-        description: "A Remote Access Tool for remote control and monitoring of a target system, featuring batch, PowerShell, and VBS scripts.",
+        description: "A tool for gaining remote control over a target machine, providing features for monitoring, command execution, and data gathering. Built with accessibility in mind, it integrates various scripting methods, allowing seamless interaction with the remote environment. This tool supports cybersecurity testing and training scenarios, simulating realistic threat models.",
         tags: ["Cybersecurity"],
         technologies: [
-            {
-                icon: batch,
-                name: "Batch",
-                link: "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands"
-            },
-            {
-                icon: powershell,
-                name: "Powershell",
-                link: "https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.2"
-            },
-            {
-                icon: visualbasic,
-                name: "VBS",
-                link: "https://learn.microsoft.com/en-us/previous-versions//scripting/developer/script56/html/vtorivbscriptoverview.asp"
-            }
+            { icon: batch, name: "Batch", link: "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands" },
+            { icon: powershell, name: "Powershell", link: "https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.2" },
+            { icon: visualbasic, name: "VBS", link: "https://learn.microsoft.com/en-us/previous-versions//scripting/developer/script56/html/vtorivbscriptoverview.asp" }
         ],
         usefulDocs: [],
         collaborators: [people[4], people[5]]
@@ -462,19 +447,11 @@ const projects = [
         name: "MedicaConsult",
         url: "https://github.com/MaryemLahmer/MedicaConsult",
         demo : "",
-        description: "A mobile application providing online consultation and appointment booking features for healthcare services.",
+        description: "A mobile app designed to facilitate online healthcare consultations, providing features for scheduling appointments, connecting with practitioners, and managing patient records. It serves as a bridge between patients and healthcare providers, offering secure, on-the-go access to essential services, appointment reminders, and profile management.",
         tags: ["Mobile"],
         technologies: [
-            {
-                icon: flutter,
-                name: "Flutter",
-                link: "https://docs.flutter.dev/"
-            },
-            {
-                icon: firebase,
-                name: "Firebase",
-                link: "https://firebase.google.com/docs"
-            }
+            { icon: flutter, name: "Flutter", link: "https://docs.flutter.dev/" },
+            { icon: firebase, name: "Firebase", link: "https://firebase.google.com/docs" }
         ],
         usefulDocs: [],
         collaborators: [people[6], people[7]]
@@ -484,19 +461,11 @@ const projects = [
         name: "EPIC task manager",
         url: "https://github.com/riahifiras/Minimal-gemini-api-intercation",
         demo : "",
-        description: "A task management app with streamlined task creation and tracking, integrating Gemini API for optimized performance.",
+        description: "An intuitive task management application for creating, tracking, and organizing personal or collaborative projects. It incorporates AI-assisted recommendations to help prioritize tasks and streamline workflows. The interface provides users with easy-to-use categories, deadlines, and notifications to boost productivity and keep projects on track.",
         tags: ["Mobile"],
         technologies: [
-            {
-                icon: flutter,
-                name: "Flutter",
-                link: "https://docs.flutter.dev/"
-            },
-            {
-                icon: gemini,
-                name: "Gemini",
-                link: "https://gemini.cobaltspeech.com/docs/guides"
-            }
+            { icon: flutter, name: "Flutter", link: "https://docs.flutter.dev/" },
+            { icon: gemini, name: "Gemini", link: "https://gemini.cobaltspeech.com/docs/guides" }
         ],
         usefulDocs: [],
         collaborators: [people[0]]
@@ -506,54 +475,18 @@ const projects = [
         name: "SOC architecture",
         url: "https://github.com/riahifiras/soc-architecture",
         demo : "",
-        description: "A complete SOC design for centralized monitoring and threat detection using tools like Wazuh, TheHive, and Cortex.",
+        description: "An architecture blueprint for a comprehensive security monitoring center, designed to detect and respond to threats in real-time. The project combines threat intelligence, intrusion detection, and incident response capabilities with centralized dashboards and automated alerting, ensuring robust defense mechanisms are in place. The design integrates open-source and cloud-native tools, making it adaptable to various infrastructures.",
         tags: ["Cybersecurity"],
         technologies: [
-            {
-                icon: wazuh,
-                name: "Wazuh",
-                link: "https://documentation.wazuh.com/"
-            },
-            {
-                icon: hive,
-                name: "TheHive",
-                link: "https://docs.thehive-project.org/"
-            },
-            {
-                icon: cortex,
-                name: "Cortex",
-                link: "https://docs.thehive-project.org/cortex/"
-            },
-            {
-                icon: misp,
-                name: "MISP",
-                link: "https://www.misp-project.org/documentation/"
-            },
-            {
-                icon: shuffle,
-                name: "Shuffle",
-                link: "https://shuffle.dev/docs/"
-            },
-            {
-                icon: opnsense,
-                name: "OPNSense",
-                link: "https://docs.opnsense.org/"
-            },
-            {
-                icon: suricata,
-                name: "Suricata",
-                link: "https://suricata.readthedocs.io/"
-            },
-            {
-                icon: docker,
-                name: "Docker",
-                link: "https://docs.docker.com/"
-            },
-            {
-                icon: azure,
-                name: "Azure",
-                link: "https://learn.microsoft.com/en-us/azure/"
-            }
+            { icon: wazuh, name: "Wazuh", link: "https://documentation.wazuh.com/" },
+            { icon: hive, name: "TheHive", link: "https://docs.thehive-project.org/" },
+            { icon: cortex, name: "Cortex", link: "https://docs.thehive-project.org/cortex/" },
+            { icon: misp, name: "MISP", link: "https://www.misp-project.org/documentation/" },
+            { icon: shuffle, name: "Shuffle", link: "https://shuffle.dev/docs/" },
+            { icon: opnsense, name: "OPNSense", link: "https://docs.opnsense.org/" },
+            { icon: suricata, name: "Suricata", link: "https://suricata.readthedocs.io/" },
+            { icon: docker, name: "Docker", link: "https://docs.docker.com/" },
+            { icon: azure, name: "Azure", link: "https://learn.microsoft.com/en-us/azure/" }
         ],
         usefulDocs: [],
         collaborators: [people[0], people[5]]
@@ -563,29 +496,13 @@ const projects = [
         name: "ENSI Junior Entreprise website",
         url: "https://github.com/ENSIJuniorEntreprise/EJE",
         demo : "",
-        description: "A web platform for ENSI Junior Entreprise, facilitating project showcase, client interactions, and team collaboration.",
+        description: "A responsive and interactive website for the ENSI Junior Entreprise, showcasing project portfolios, client testimonials, and the association's achievements. The platform offers a modern design that serves as a professional portal for potential clients, enhancing visibility and engagement while supporting internal collaboration through an integrated task board. As part of the team, I developed the backend and the admin dashboard, which streamlines data management and site updates.",
         tags: ["Web"],
         technologies: [
-            {
-                icon: mongo,
-                name: "MongoDB",
-                link: "https://www.mongodb.com/docs/"
-            },
-            {
-                icon: express,
-                name: "ExpressJS",
-                link: "https://expressjs.com/en/starter/installing.html"
-            },
-            {
-                icon: react,
-                name: "ReactJS",
-                link: "https://react.dev/"
-            },
-            {
-                icon: node,
-                name: "NodeJS",
-                link: "https://nodejs.org/en/docs/"
-            }
+            { icon: mongo, name: "MongoDB", link: "https://www.mongodb.com/docs/" },
+            { icon: express, name: "ExpressJS", link: "https://expressjs.com/en/starter/installing.html" },
+            { icon: react, name: "ReactJS", link: "https://react.dev/" },
+            { icon: node, name: "NodeJS", link: "https://nodejs.org/en/docs/" }
         ],
         usefulDocs: [],
         collaborators: []
@@ -595,24 +512,15 @@ const projects = [
         name: "EZticks",
         url: "https://github.com/riahifiras/Packet-sniffer",
         demo : "",
-        description: "A ticket management system for handling customer queries, built with NextJS and hosted on AWS.",
+        description: "A comprehensive ticketing system designed to streamline customer service by managing and tracking support tickets from creation to resolution. Equipped with user-friendly interfaces, it enables agents to respond efficiently while clients stay updated on ticket statuses. The platform is deployed on a secure, scalable infrastructure to handle high volumes of customer requests.",
         tags: ["Web"],
         technologies: [
-            {
-                icon: next,
-                name: "NextJS",
-                link: "https://nextjs.org/docs"
-            },
-            {
-                icon: aws,
-                name: "AWS",
-                link: "https://docs.aws.amazon.com/"
-            }
+            { icon: next, name: "NextJS", link: "https://nextjs.org/docs" },
+            { icon: aws, name: "AWS", link: "https://docs.aws.amazon.com/" }
         ],
         usefulDocs: [],
         collaborators: []
     }
-    
     
 ];
 

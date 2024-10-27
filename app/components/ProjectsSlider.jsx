@@ -20,7 +20,15 @@ const ProjectsSlider = ({showPopup, openPopup, projects}) => {
             <Slider {...settings}>
                 {projects.map((project, index) => {
                     return(
-                        <Project key={index} showPopup={showPopup} openPopup={() => openPopup(project.image, project.name, project.url, project.description)} image={project.image} name={project.name} url={project.url} descripton={project.description}/>
+                        <Project
+                            key={index}
+                            showPopup={showPopup}
+                            openPopup={() => openPopup(project)}
+                            image={project.image}
+                            name={project.name}
+                            url={project.url}
+                            description={project.description}
+                        />
                     )
                 })}
             </Slider>

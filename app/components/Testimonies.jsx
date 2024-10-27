@@ -70,13 +70,11 @@ function TestimonyCard({ item }) {
     return (
         <div className={`mx-10`}>
             <div className="flex lg:flex-row flex-col items-center lg:items-start gap-8 min-h-[172px] ">
-                <div className="w-1/3">
+                <div className="lg:w-1/3">
                     <Image
                         src={item.person.picture}
                         alt={item.person.name}
-                        width={120}
-                        height={120}
-                        className="rounded-full flex-shrink-0"
+                        className="rounded-full flex-shrink-0 lg:h-auto lg:w-auto h-32 w-32 object-cover"
                     />
                 </div>
                 <div className="flex flex-col h-full items-start gap-2 text-left w-full justify-between">

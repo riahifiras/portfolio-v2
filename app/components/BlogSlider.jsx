@@ -1,12 +1,10 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-import Project from './Project'
 import { blogs } from "../data";
 import Blog from "../Blog";
 
-const BlogSlider = () => {
+const BlogSlider = ({ onOpenPopup }) => {
     var settings = {
         dots: true,
         infinite: true,
@@ -22,7 +20,7 @@ const BlogSlider = () => {
             <Slider {...settings}>
                 {blogs.map((blog, index) => {
                     return (
-                        <Blog key={index} post={blog}/>
+                        <Blog key={index} post={blog} onOpenPopup={onOpenPopup} />
                     )
                 })}
             </Slider>

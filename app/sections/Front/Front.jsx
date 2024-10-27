@@ -64,7 +64,7 @@ const Front = () => {
                 </span>
                 <Cursor />
               </h3>
-              <div className=" flex lg:gap-4 gap-2 lg:flex-row flex-col mt-6">
+              <div className=" flex lg:gap-4 gap-2 flex-row mt-6">
               <button onClick={handleContact} className='unselectable z-30 flex justify-center items-center h-12 w-36 rounded-full bg-gray-800 text-white text-xl font-semibold hover:bg-gray-700 transition duration-200'>Contact me</button>
               <button onClick={handleDownload} className='unselectable z-30 flex justify-center items-center h-12 w-36 rounded-full bg-blue-700 text-white text-xl font-semibold hover:bg-blue-600 transition duration-200'>Get Resume</button>
               </div>

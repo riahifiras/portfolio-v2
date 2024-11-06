@@ -35,7 +35,7 @@ const Front = () => {
 
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = `https://drive.google.com/file/d/1CtzGPhT9hTV77TaK5uulSe5_2OGQ9l1q/view?usp=sharing`;
+    link.href = `https://drive.google.com/file/d/1_3kyVvmDAoKKDDaPfubXJuCEJT_ZszoF/view?usp=sharing`;
     link.target = '_blank';
     link.click();
   };

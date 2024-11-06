@@ -1,11 +1,11 @@
-import { icon1, icon2, icon3, icon4, react, html, css, js, flask, csharp, cplusplus, express, figma, canva, solidworks, catia, autocad, photoshop, illustrator, unity, tailwindcss, python, logo} from '../Images';
+import { icon1, icon2, icon3, icon4, bootstrap, typescript, redux, react, html, css, js, flask, csharp, cplusplus, express, figma, canva, solidworks, catia, autocad, photoshop, illustrator, adobeXD, unity, tailwindcss, python, logo, flutter, firebase, node, next} from '../Images';
 
 const domains = [
     {
         id: 1,
         icon: icon1,
-        title: 'Web Development',
-        tools: [html, css, js, tailwindcss, react, flask],
+        title: 'Web & Mobile Development',
+        tools: [html, css, js, typescript, bootstrap, tailwindcss, react, next, redux, express, node, flask, flutter, firebase],
         description: "Crafting seamless digital experiences with expertise in frontend and backend technologies."
     },
     {
@@ -19,7 +19,7 @@ const domains = [
         id: 3,
         icon: icon3,
         title: 'Graphic Design',
-        tools: [photoshop, illustrator, figma, canva ],
+        tools: [photoshop, illustrator, adobeXD, figma, canva ],
         description: "Transforming concepts into captivating visuals for logos and prototypes."
     },
     {

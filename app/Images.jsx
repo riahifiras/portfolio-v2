@@ -65,6 +65,10 @@ import opnsense from './assets/icons/opnsense.png'
 import shuffle from './assets/icons/shuffle.png'
 import suricata from './assets/icons/suricata.png'
 import wazuh from './assets/icons/wazuh.png'
+import bootstrap from './assets/icons/bootstrap.svg'
+import typescript from './assets/icons/typescript.svg'
+import redux from './assets/icons/redux.svg'
+import adobeXD from './assets/icons/adobe-xd.png'
 
 import malak from './assets/people/malak.jpg'
 import aziz from './assets/people/aziz.jpg'
@@ -79,4 +83,4 @@ import eya from './assets/people/eya.jpg'
 
 
 
-export { eya, saif, safwen, marwane, marie, mrad, gassara, aziz, malak, docker, mysql, aws, azure, cortex, hive, misp, next, opnsense, shuffle, suricata, wazuh, proteus, gemini, batch, espressif, pygame, tk, sfml, firebase, mongo, node, php, flutter, arduino, powershell, raspberryPiPico, visualbasic, me, icon1, icon2, icon3, icon4, react, html, css, js, flask, csharp, cplusplus, express, figma, canva, solidworks, catia, autocad, photoshop, illustrator, unity, tailwindcss, python, logo, ensi, robot, sniffer, station, cpcIcon, securityIcon, roboticsIcon, ezticks, medica, rat, soc, wiz, sniffer2, eje, ducky };
+export { eya, saif, safwen, marwane, marie, mrad, gassara, aziz, malak, docker, mysql, adobeXD, aws, azure, cortex, hive, misp, bootstrap, typescript, redux, next, opnsense, shuffle, suricata, wazuh, proteus, gemini, batch, espressif, pygame, tk, sfml, firebase, mongo, node, php, flutter, arduino, powershell, raspberryPiPico, visualbasic, me, icon1, icon2, icon3, icon4, react, html, css, js, flask, csharp, cplusplus, express, figma, canva, solidworks, catia, autocad, photoshop, illustrator, unity, tailwindcss, python, logo, ensi, robot, sniffer, station, cpcIcon, securityIcon, roboticsIcon, ezticks, medica, rat, soc, wiz, sniffer2, eje, ducky };

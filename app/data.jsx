@@ -111,7 +111,7 @@ const robotics = [
     },
     {
         image: robotics7,
-        description: "The team i build my first line following robot with."
+        description: "The team I built my first line following robot with."
     },
     {
         image: robotics2,
@@ -161,7 +161,7 @@ const ctf = [
 const testimonies = [
     {
         person: people[6],
-        testimony: "If ever in doubt, you can always turn to Firas Riahi. As a friend and a colleague, I count myself very lucky to have worked with this guy on several occasions, each one a remarkable unique experience that i treasure.  Firas welcomed me with open arms whenever I needed it, never failing to give me motivation to carry on. This guy can shine brighter than the stars in the darkest of nights, with what he brings to the table I will always consider myself a winner to have met him, known him and worked with him. I am thankful to have someone in my life as enthusiastic and motivated as Firas, his heart is one of the biggest to encounter in a lifetime and I know one day he will conquer the world in his own ways."
+        testimony: "If ever in doubt, you can always turn to Firas Riahi. As a friend and a colleague, I count myself very lucky to have worked with this guy on several occasions, each one a remarkable unique experience that I treasure.  Firas welcomed me with open arms whenever I needed it, never failing to give me motivation to carry on. This guy can shine brighter than the stars in the darkest of nights, with what he brings to the table I will always consider myself a winner to have met him, known him and worked with him. I am thankful to have someone in my life as enthusiastic and motivated as Firas, his heart is one of the biggest to encounter in a lifetime and I know one day he will conquer the world in his own ways."
     },
     {
         person: people[8],
@@ -173,7 +173,7 @@ const testimonies = [
     },
     {
         person: people[0],
-        testimony: "Firas is that spark of fire that brings enthusiasm and motivation to them team, leading others to great heights. He is without a doubt one of the finest and smartest developers out there and his spirit is unlike any other as he can create any project he puts his mind into."
+        testimony: "Firas is that spark of fire that brings enthusiasm and motivation to the team, leading others to great heights. He is without a doubt one of the finest and smartest developers out there and his spirit is unlike any other as he can create any project he puts his mind into."
     }
 ]
 
